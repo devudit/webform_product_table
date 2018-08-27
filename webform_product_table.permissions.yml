@@ -1,0 +1,4 @@
+administer wpt settings:
+  title: 'Administer wpt settings'
+  description: 'Administer Webform Product Table Settings'
+  restrict access: false

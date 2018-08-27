@@ -1,0 +1,7 @@
+name: Webform Product Table
+type: module
+description: 'A webform component with custom product list'
+package: Webform
+core: 8.x
+dependencies:
+  - 'webform:webform'

@@ -1,0 +1,23 @@
+services:
+  wpt.entity_helper:
+    class: Drupal\webform_product_table\EntityHelper
+    public: true
+    arguments:
+      - '@entity_type.manager'
+      - '@entity_field.manager'
+      - '@database'
+  wpt.config:
+    class: Drupal\webform_product_table\WebformProductTable
+    public: true
+    arguments:
+      - '@config.factory'
+      - '@database'
+      - '@entity_type.manager'
+      - '@wpt.entity_helper'
+  wpt.form_helper:
+    class: Drupal\webform_product_table\Form\FormHelper
+    public: true
+    arguments:
+      - '@wpt.entity_helper'
+      - '@current_user'
+      - '@wpt.config'

@@ -1,0 +1,12 @@
+wpt:
+  version: VERSION
+  css:
+    theme:
+      css/webform-product-table.css: {}
+  js:
+    js/webform-product-table.js: {preprocess: false}
+  dependencies:
+    - webform/webform.composite
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

@@ -1,0 +1,27 @@
+.webform-multiple-add{
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+.webform-submission-form .entity-content-form-footer{
+  clear: both;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
+}
+.webform-submission-form .entity-content-form-footer .totel-title{
+  float: left;
+}
+.webform-submission-form .entity-content-form-footer .table-price{
+  float: right;
+}
+.webform-submission-form .webform-flex--container{
+  display: flex;
+  align-items: center;
+}
+.webform-submission-form .webform-flex--container .product-percent{
+  display: block;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a Webform Product Table.
+ *
+ * Available variables:
+ * - content: The WebformProductTable to be output.
+
+ * @see template_preprocess_webform_product_table()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('webform_product_table/wpt') }}
+{% if flexbox %}
+
+    <div class="webform-flexbox">
+        {% if content.item_quantity %}
+            <div class="webform-flex webform-flex--1">
+                <div class="webform-flex--container">{{ content.item_quantity }}</div>
+            </div>
+        {% endif %}
+        {% if content.item_title %}
+            <div class="webform-flex webform-flex--1">
+                <div class="webform-flex--container">{{ content.item_title }}</div>
+            </div>
+        {% endif %}
+        {% if content.item_number %}
+            <div class="webform-flex webform-flex--1">
+                <div class="webform-flex--container">{{ content.item_number }}</div>
+            </div>
+        {% endif %}
+        {% if content.item_description %}
+            <div class="webform-flex webform-flex--1">
+                <div class="webform-flex--container">{{ content.item_description }}</div>
+            </div>
+        {% endif %}
+        {% if content.item_price %}
+            <div class="webform-flex webform-flex--1">
+                <div class="webform-flex--container">{{ content.item_price }}</div>
+            </div>
+        {% endif %}
+        {% if content.item_discount %}
+            <div class="webform-flex webform-flex--1">
+                <div class="webform-flex--container">{{ content.item_discount }}</div>
+            </div>
+        {% endif %}
+        {% if content.item_id %}
+            {{ content.item_id }}
+        {% endif %}
+    </div>
+
+{% else %}
+    {{ content }}
+{% endif %}
+

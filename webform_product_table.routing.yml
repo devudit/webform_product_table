@@ -1,0 +1,17 @@
+wpt.ajax:
+  path: '/wpt/ajax/{type}/{element_id}/{id}'
+  defaults:
+    _controller: 'Drupal\webform_product_table\Controller\AjaxCallbackController::changeAjaxHandler'
+    _title: ''
+    id: 0
+    element_id: 0
+    type: 'product-change'
+  requirements:
+    _permission: 'access content'
+wpt.autocomplete:
+  path: '/wpt/{bundle}/{count}'
+  defaults:
+    _controller: '\Drupal\webform_product_table\Controller\AutocompleteController::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'
